@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>	
+  <body>
+    <div class="header">
+      <h1>ST. CHARLES PUBLIC LIBRARY <br>APPLICATION FOR USE OF FACILITIES</h1>
+    </div>
+      <form action="formScript.php" method="POST">
+        <div class="container">	
+          <div class="top">
+	    <div class="row">
+	      Date of meetings: <input type="date" id="date" name="date" size="50" /><br />
+	      Name of Organization: <input type="text" id="organizationName" name="organizationName" size="50" /><br />
+              Nature of meeting: <input type="text" id="meetingNature" name="meetingNature" /><br />
+	      Address<input type="text" id="address" name="address" /><br />
+	      Daytime phone number: <input type="tel" id="tel" />
+            </div>
+          <!--Insert column break here-->
+	    <div class="row">
+	      Library Card Number: <input type="text" id="card" name="card" /><br />
+	      Contact person: <input type="text" id="contactPerson" name="contactPerson" /><br />
+              Email: <input type="email" id="email" name="fax" size="60" /><br />
+	      Fax: <input type="tel"id="fax" name="fax"/><br />
+              Number expected to attend: 
+	        <select name="expected">
+	          <option value="10">0-10</option>
+		  <option value="20">11-20</option>
+		  <option value="30">21-30</option>
+		  <option value="40">31-40</option>
+		  <option value="50">41-50</option>
+		  <option value="60">60 or more</option>
+	        </select>
+	    </div>
+          </div>
+	    <div class="secondRow">
+	      Set-Up Time*: 
+	        <select name="setupTime">
+	          <option value="0900-1000">9:00-9:30am</option>
+	          <option value="0931-1000>9:30-10am</option>
+	          <option value="1001-1030">10:00-10:30am</option>
+	          <option value="1031-1100">10:30-11:00am</option>
+	          <option value="1101-1130">11:00-11:30am</option>
+	          <option value="1131-1200">11:30-12:00pm</option>
+	          <option value="1201-1230">12:00-12:30pm</option>
+	          <option value="1231-1300">12:30-1:00pm</option>
+	          <option value="1301-1330">1:00pm-1:30pm</option>
+	          <option value="1331-1400">1:30pm-2:00pm</option>
+	          <option value="1401-1430">2:00pm-2:30pm</option>
+	          <option value="1431-1500">2:30pm-3:00pm</option>
+	          <option value="1501-1530">3:00-3:30pm</option>
+	          <option value="1531-1600">3:30-4:00pm</option>
+	          <option value="1601-1630">4:00-4:30pm</option>
+	          <option value="1631-1700">4:30-5:00pm</option>
+	          <option value="1701-1730">5:00-5:30pm</option>
+	          <option value="1731-1800">5:30-6:00pm</option>
+	          <option value="1801-1830">6:00-6:30pm</option>
+	          <option value="1831-1900">6:30-7:00pm</option>
+	          <option value="1901-1930">7:00-7:30pm</option>
+	          <option value="1931-2000">7:30-8:00pm</option>
+	          <option value="2001-2030">8:00-8:30pm</option>
+                  <option value="2031-2100">8:30-9:00pm</option>
+	        </select>
+	      Meeting Time**:	
+	        <select name="meetingtime">
+	          <option value="0900-1000">9:00-9:30am</option>
+		  <option value="0931-1000>9:30-10am</option>
+		  <option value="1001-1030">10:00-10:30am</option>
+		  <option value="1031-1100">10:30-11:00am</option>
+		  <option value="1101-1130">11:00-11:30am</option>
+		  <option value="1131-1200">11:30-12:00pm</option>
+		  <option value="1201-1230">12:00-12:30pm</option>
+		  <option value="1231-1300">12:30-1:00pm</option>
+		  <option value="1301-1330">1:00pm-1:30pm</option>
+		  <option value="1331-1400">1:30pm-2:00pm</option>
+		  <option value="1401-1430">2:00pm-2:30pm</option>
+		  <option value="1431-1500">2:30pm-3:00pm</option>
+		  <option value="1501-1530">3:00-3:30pm</option>
+		  <option value="1531-1600">3:30-4:00pm</option>
+		  <option value="1601-1630">4:00-4:30pm</option>
+		  <option value="1631-1700">4:30-5:00pm</option>
+		  <option value="1701-1730">5:00-5:30pm</option>
+		  <option value="1731-1800">5:30-6:00pm</option>
+		  <option value="1801-1830">6:00-6:30pm</option>
+		  <option value="1831-1900">6:30-7:00pm</option>
+		  <option value="1901-1930">7:00-7:30pm</option>
+		  <option value="1931-2000">7:30-8:00pm</option>
+		  <option value="2001-2030">8:00-8:30pm</option>		
+		  <option value="2031-2100">8:830-9:00pm</option>
+                </select>
+	      <p>Due to Library Stffing, changes in set-up on the day of the meeting cannot be accommodated.</p>	
+	      <p>**All meetings held at the Library should be scheduled to conclude 15 Minutes prior to Library closing time.</p>
+	      <p>Library closes promptly at 9:00 pm Mon.-Thurs.; 8:00 pm Fir.; 5:00 pm Sat. and Sun.</p>
+            </div>
+	    <div class="thirdRow">
+		<div class="row">
+		  <p><strong>ROOM REQUESTED</strong></p>
+		    <input type="radio" name="room" value="huntley">Huntley Room<br />
+		    <input type="radio" name="room" value="carnegie">Carnegie Community Room<br />
+		    <input type="radio" name="room" value="bisbee">Bisbee Conference Room<br />
+		</div>
+		<div class="row">
+		  <span="indent">Kitchen Use Requested</span>
+		    <input type="radio" name="kitchen" value="yes">Yes
+		    <input type="radio" name="kitchen" value="no">No<br />
+		  <span="indent">Coffee Pot</span>
+		    <input type="radio" name="coffee" value="yes">Yes
+		    <input type="radio" name="coffee" value="no">No<br />
+		  <strong>Equpiment Requested</strong>: <input type="text" id="equipmentreq" name="equipmentreq" size="70" /><br />
+		  <strong>FEES (see fee sheet):  Fees must be paid 2 weeks prior to request date or reservation will be canceled.</strong>
+                <div>
+	      </div>
+	    </div>
+	    <div class= "fourthRow">
+	      <p>Please indacte room set up from diagrms below.  If no set up is indicated, the Library will set the room.</p>
+		
+		<input type="radio" name="setup" value="theatre"><img src=img/huntheater.jpg />
+	    </div>
+	    </div>
+	      <input type="submit" value="Submit" />
+	      <input type="reset" value="Reset" />
+	  
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+		

@@ -1,0 +1,57 @@
+.header { 
+	background-color: #00248F; 
+	height: 150px;
+	line-height: 50px;
+}
+
+h1 {
+	"Tahoma", "Geneva", sans-serif;
+	color: white;
+	font-size: 25pt;
+	text-align: center;
+	padding-top: 25px;	
+}
+
+
+.container { 
+	margin: auto;
+	width: 95%;
+}
+.row {
+	display: inline-block;
+	margin: 1em;
+	
+}
+
+.secondRow {
+	display: inline-block;
+	padding-top: 15px;
+	padding-left: 20px;
+	padding-right:20px;
+	margin: 2px auto;
+	border: solid 2px;
+	text-align: center;
+	width: 95%;
+}
+
+.secondRow p:last-child {
+	margin-bottom: 0;
+	padding-bottom: 5px;
+	color: red;
+}
+
+.thirdRow { 
+	margin-top: 10px;
+	border: solid 2px;
+	width: 95%;
+	padding: 20px;
+}
+.thirdRow p {
+	margin: 0;
+}
+
+.indent { 
+	margin-left: 10px
+	padding-left: 10px;
+ }
+
